@@ -39,6 +39,7 @@ theme.bodyFontFamily = [ 'Lora', 'Arial', 'Sans serif' ];
 theme.boldWeight = 700;
 
 const anchorColor = '#2b89d0';
+const accentColor = '#a6e6e6';
 
 theme.overrideThemeStyles = ({ rythym }, options) => ({
 	'a': {
@@ -52,6 +53,10 @@ theme.overrideThemeStyles = ({ rythym }, options) => ({
 	},
 	'header > * > a:hover': {
 		color: anchorColor
+	},
+	'blockquote': {
+		borderLeftColor: accentColor,
+		marginLeft: '-1.6rem'
 	}
 });
 
