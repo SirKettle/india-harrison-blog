@@ -1,14 +1,15 @@
-import Typography from 'typography'
+import Typography from 'typography';
 // import Wordpress2016Theme from 'typography-theme-wordpress-2016'
 // import GithubTheme from 'typography-theme-github'
 // import irvingTheme from 'typography-theme-irving'
 // import doelgerTheme from 'typography-theme-doelger'
 // import moragaTheme from 'typography-theme-moraga'
-import theme from 'typography-theme-lincoln'
+import theme from 'typography-theme-lincoln';
+import colors from 'constants/colors';
 
 theme.baseFontSize = '17px';
 theme.baseLineHeight = 1.6;
-theme.scaleRatio = 2.5;
+theme.scaleRatio = 3;
 theme.googleFonts = [
 	{
 		name: 'Playfair Display',
@@ -29,8 +30,8 @@ theme.googleFonts = [
 	}
 ];
 
-theme.bodyColor = 'hsla(0,0%,0%,0.6)';
-theme.headerColor = 'hsla(0,0%,0%,0.6)';
+theme.bodyColor = colors.bodyText;
+theme.headerColor = colors.headerText;
 theme.headerWeight = 700;
 theme.bodyWeight = 400;
 theme.boldWeight = 700;
@@ -38,25 +39,34 @@ theme.headerFontFamily = [ 'Playfair Display', 'Georgia' ];
 theme.bodyFontFamily = [ 'Lora', 'Arial', 'Sans serif' ];
 theme.boldWeight = 700;
 
-const anchorColor = '#2b89d0';
-const accentColor = '#a6e6e6';
+const anchorColor = colors.link;
+const accentColor = colors.accent;
 
 theme.overrideThemeStyles = ({ rythym }, options) => ({
+	'h1,h2,h3,h4,h5,h6': {
+		marginBottom: '1.6rem',
+		lineHeight: 1.2
+	},
+	'hr': {
+		background: colors.accent
+	},
 	'a': {
 		color: anchorColor,
 		backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, ${ anchorColor } 1px, ${ anchorColor } 2px, rgba(0, 0, 0, 0) 2px)`
 	},
 	'header > * > a': {
-		color: 'inherit',
+		// color: 'inherit',
 		textShadow: 'none',
 		backgroundImage: 'none'
 	},
-	'header > * > a:hover': {
-		color: anchorColor
-	},
+	// 'header > * > a:hover': {
+		// color: anchorColor
+	// },
 	'blockquote': {
-		borderLeftColor: accentColor,
-		marginLeft: '-1.6rem'
+		borderLeftColor: `${ accentColor } !important`,
+		marginLeft: '-1.6rem',
+		lineHeight: 1.7,
+		color: colors.bodyTextLight
 	}
 });
 
