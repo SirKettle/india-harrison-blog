@@ -21,8 +21,7 @@ class Template extends React.Component {
           <Link
             style={{
               boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
+              textDecoration: 'none'
             }}
             to={prefixLink('/')}
           >
@@ -34,15 +33,13 @@ class Template extends React.Component {
       header = (
         <h3
           style={{
-            fontFamily: 'Montserrat, sans-serif',
             marginTop: 0,
           }}
         >
           <Link
             style={{
               boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
+              textDecoration: 'none'
             }}
             to={prefixLink('/')}
           >
@@ -58,7 +55,7 @@ class Template extends React.Component {
           padding: `${rhythm(1.5)} ${rhythm(3/4)}`,
         }}
       >
-        {header}
+        <header>{header}</header>
         {children}
       </Container>
     )
