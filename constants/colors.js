@@ -6,6 +6,7 @@
 const saffron = '#FF9933';
 const green = '#3eb977';
 const yellow = '#ffec62';
+const quotes = '#f7f1c1';
 
 export default {
 	// bodyText: 'hsla(0,0%,0%,0.6)',
@@ -17,6 +18,7 @@ export default {
 	headerText: saffron,
 	// accent: '#a6e6e6',
 	accent: yellow,
+	quotes: quotes,
 	link: green 
 	// link: '#2b89d0' 
 };

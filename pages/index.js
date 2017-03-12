@@ -9,6 +9,7 @@ import { config } from 'config'
 import include from 'underscore.string/include'
 import Bio from 'components/Bio'
 import Snippet from 'components/Snippet';
+import MummyElliotAndMePhoto from 'components/mummyelliotandme.jpg';
 
 class BlogIndex extends React.Component {
   render () {
@@ -28,6 +29,8 @@ class BlogIndex extends React.Component {
           ]}
         />
         <Bio />
+        <p>I‘m a lucky boy who has the bestest Mummy and Elliot.  Here is us on our last holiday...</p>
+        <img src={ prefixLink(MummyElliotAndMePhoto) } />
         <h3>My latest posts...</h3>
         {visiblePages.map((page) => (
           <div
