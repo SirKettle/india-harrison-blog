@@ -44,6 +44,9 @@ const anchorColor = colors.link;
 const accentColor = colors.quotes;
 
 theme.overrideThemeStyles = ({ rythym }, options) => ({
+	'html, body': {
+		minHeight: '100%'
+	},
 	'.app': {
 		background: colors.bodyBackground,
 		padding: '1.5rem 1.2rem'
