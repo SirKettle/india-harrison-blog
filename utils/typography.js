@@ -45,6 +45,9 @@ const accentColor = colors.quotes;
 
 theme.overrideThemeStyles = ({ rythym }, options) => ({
 	'html, body': {
+		display: 'flex',
+		flexDirection: 'column',
+		flex: '1 1 100%',
 		minHeight: '100%'
 	},
 	'.app': {
@@ -88,19 +91,19 @@ theme.overrideThemeStyles = ({ rythym }, options) => ({
 		body: {
 			paddingTop: '1.6rem',
 			paddingBottom: '1.6rem',
-			background: `url(${ wallpaper })`,
-			backgroundSize: '8%',
+			background: colors.bodyBackground,
 			position: 'relative'
 		},
 		'body:after': {
+			content: '""',
 			position: 'absolute',
 			top: 0,
 			right: 0,
 			bottom: 0,
 			left: 0,
-			content: '""',
-			background: colors.bodyBackground,
-			opacity: 0.95,
+			background: `url(${ wallpaper })`,
+			backgroundSize: '8%',
+			opacity: 0.05,
 			zIndex: -1
 		},
 		'.app': {
