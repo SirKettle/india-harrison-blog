@@ -2,14 +2,14 @@ import React from 'react'
 import { Link } from 'react-router'
 import sortBy from 'lodash/sortBy'
 import get from 'lodash/get'
-import { prefixLink } from 'gatsby-helpers'
 import { rhythm } from 'utils/typography'
 import Helmet from "react-helmet"
 import { config } from 'config'
 import include from 'underscore.string/include'
 import Bio from 'components/Bio'
 import Snippet from 'components/Snippet';
-import MummyElliotAndMePhoto from 'components/mummyelliotandme.jpg';
+import mummyElliotAndMePhoto from 'components/mummyelliotandme.jpg';
+import brothersPortrait from 'components/brothers-portrait.jpg';
 
 class BlogIndex extends React.Component {
   render () {
@@ -30,7 +30,10 @@ class BlogIndex extends React.Component {
         />
         <Bio />
         <p>I‘m a lucky boy who has the bestest Mummy and Elliot.  Here is us on our last holiday...</p>
-        <img src={ prefixLink(MummyElliotAndMePhoto) } />
+        <img src={ mummyElliotAndMePhoto } />
+        <h3>Elliot</h3>
+        <p>My little brother is called Elliot. Here is a picture I drew of us together</p>
+        <img src={ brothersPortrait } />
         <h3>My latest posts...</h3>
         {visiblePages.map((page) => (
           <div

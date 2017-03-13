@@ -1,5 +1,4 @@
 import Typography from 'typography';
-import { prefixLink } from 'gatsby-helpers'
 // import Wordpress2016Theme from 'typography-theme-wordpress-2016'
 // import GithubTheme from 'typography-theme-github'
 // import irvingTheme from 'typography-theme-irving'
@@ -46,7 +45,7 @@ const accentColor = colors.quotes;
 
 theme.overrideThemeStyles = ({ rythym }, options) => ({
 	'.app': {
-		background: 'white',
+		background: colors.bodyBackground,
 		padding: '1.5rem 1.2rem'
 	},
 	'h1,h2,h3,h4,h5,h6': {
@@ -58,7 +57,9 @@ theme.overrideThemeStyles = ({ rythym }, options) => ({
 	},
 	'a': {
 		color: anchorColor,
-		backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, ${ anchorColor } 1px, ${ anchorColor } 2px, rgba(0, 0, 0, 0) 2px)`
+		backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, ${ anchorColor } 1px, ${ anchorColor } 2px, rgba(0, 0, 0, 0) 2px)`,
+		textShadow: `${ colors.bodyBackground } 0.03em 0px, ${ colors.bodyBackground } -0.03em 0px, ${ colors.bodyBackground } 0px 0.03em, ${ colors.bodyBackground } 0px -0.03em, ${ colors.bodyBackground } 0.06em 0px, ${ colors.bodyBackground } -0.06em 0px, ${ colors.bodyBackground } 0.09em 0px, ${ colors.bodyBackground } -0.09em 0px, ${ colors.bodyBackground } 0.12em 0px, ${ colors.bodyBackground } -0.12em 0px, ${ colors.bodyBackground } 0.15em 0px, ${ colors.bodyBackground } -0.15em 0px`
+		// backgroundImage: `linear-gradient(to top, ${ colors.bodyBackground }, ${ colors.bodyBackground } 1px, ${ anchorColor } 1px, ${ anchorColor } 2px, ${ colors.bodyBackground } 2px)`
 	},
 	'header > * > a': {
 		textShadow: 'none',
@@ -84,7 +85,7 @@ theme.overrideThemeStyles = ({ rythym }, options) => ({
 		body: {
 			paddingTop: '1.6rem',
 			paddingBottom: '1.6rem',
-			background: `url(${ prefixLink(wallpaper) })`,
+			background: `url(${ wallpaper })`,
 			backgroundSize: '8%',
 			position: 'relative'
 		},
@@ -95,7 +96,7 @@ theme.overrideThemeStyles = ({ rythym }, options) => ({
 			bottom: 0,
 			left: 0,
 			content: '""',
-			background: '#f1efe8',
+			background: colors.bodyBackground,
 			opacity: 0.95,
 			zIndex: -1
 		},

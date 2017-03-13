@@ -8,17 +8,29 @@ const green = '#3eb977';
 const yellow = '#ffec62';
 const quotes = '#f7f1c1';
 
-export default {
-	// bodyText: 'hsla(0,0%,0%,0.6)',
-	// headerText: 'hsla(0,20%,0%,0.6)',
-	// accent: '#a6e6e6',
+const lightIndianScheme = {
+	bodyBackground: '#ffffff',
 	bodyText: 'hsla(0,0%,0%,0.6)',
 	bodyTextDark: 'hsla(0,0%,0%,0.8)',
 	bodyTextLight: 'hsla(0,0%,0%,0.4)',
 	headerText: saffron,
-	// accent: '#a6e6e6',
 	accent: yellow,
 	quotes: quotes,
-	link: green 
-	// link: '#2b89d0' 
+	link: green
+};
+
+const darkIndianScheme = {
+	bodyBackground: '#333',
+	bodyText: '#eee',
+	bodyTextDark: '#ddd',
+	bodyTextLight: '#fff',
+	headerText: saffron,
+	accent: '#555',
+	quotes: green,
+	link: '#2b89d0'
+};
+
+export default {
+	...darkIndianScheme
+	,...lightIndianScheme
 };

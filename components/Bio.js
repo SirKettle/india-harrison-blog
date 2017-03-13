@@ -1,7 +1,6 @@
 import React from 'react'
 import { config } from 'config'
 import { rhythm } from 'utils/typography'
-import { prefixLink } from 'gatsby-helpers'
 import profilePic from './harrison-mugshot.jpg'
 
 class Bio extends React.Component {
@@ -13,7 +12,7 @@ class Bio extends React.Component {
         }}
       >
         <img
-          src={prefixLink(profilePic)}
+          src={profilePic}
           alt={`author ${config.authorName}`}
           style={{
             float: 'left',
@@ -21,6 +20,7 @@ class Bio extends React.Component {
             marginBottom: 0,
             width: rhythm(2),
             height: rhythm(2),
+            borderRadius: '50%'
           }}
         />
         Written by <strong>{config.authorName}</strong> who lives in London and goes to school at <a href="https://www.stmarysn8.co.uk/">St. Mary‘s</a>.
