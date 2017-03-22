@@ -19,6 +19,17 @@ const lightIndianScheme = {
 	link: green
 };
 
+const niceScheme = {
+	bodyBackground: '#ffffff',
+	bodyText: 'hsla(0,0%,0%,0.6)',
+	bodyTextDark: 'hsla(0,0%,0%,0.8)',
+	bodyTextLight: 'hsla(0,0%,0%,0.4)',
+	headerText: '#d8a471',
+	accent: '#f7f1c1',
+	quotes: quotes,
+	link: '#7295af'
+};
+
 const darkIndianScheme = {
 	bodyBackground: '#333',
 	bodyText: '#eee',
@@ -33,4 +44,5 @@ const darkIndianScheme = {
 export default {
 	...darkIndianScheme
 	,...lightIndianScheme
+	// ,...niceScheme
 };

@@ -34,17 +34,16 @@ class BlogIndex extends React.Component {
         <h3>Elliot</h3>
         <p>My little brother is called Elliot. Here is a picture I drew of us together</p>
         <img src={ brothersPortrait } />
-        <h3>My latest posts...</h3>
+        <h2>Follow my adventure...</h2>
+        <div className="snippets">
         {visiblePages.map((page) => (
-          <div
+          <div className="snippetContainer"
             key={page.path}
-            style={{
-                marginBottom: rhythm(1/4),
-            }}
           >
             <Snippet post={ page } />
           </div>
         ))}
+        </div>
       </div>
     )
   }

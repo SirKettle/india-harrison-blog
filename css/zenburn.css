@@ -152,3 +152,9 @@ code {
   max-width: 100%;
 }
 
+.clearFix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+

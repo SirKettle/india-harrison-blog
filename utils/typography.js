@@ -77,6 +77,26 @@ theme.overrideThemeStyles = ({ rythym }, options) => ({
 		lineHeight: 1.7,
 		color: colors.bodyTextLight
 	},
+	'.snippets': {
+		display: 'flex',
+		flexDirection: 'column'
+	},
+	'.snippets > .snippetContainer': {
+    	marginBottom: '1.3rem'
+	},
+	'.snippet *': {
+		color: 'white !important'
+	},
+	'.snippet > a > *:last-child': {
+		marginBottom: 0
+    },
+	'.snippet > a': {
+		backgroundImage: 'linear-gradient(to bottom, rgba(0,0,0,0.22) 50%, rgba(0,0,0,0.35) 90%)',
+        padding: '5rem 2rem 2rem'
+    },
+	'.snippet:hover > a': {
+		backgroundImage: 'linear-gradient(to bottom, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0.32) 90%)',
+	},
 	'@media (min-width: 480px)': {
 		'.app': {
 			padding: '2rem 2.5rem',
@@ -89,8 +109,7 @@ theme.overrideThemeStyles = ({ rythym }, options) => ({
 	},
 	'@media (min-width: 769px)': {
 		body: {
-			paddingTop: '1.6rem',
-			paddingBottom: '1.6rem',
+			paddingBottom: '2rem',
 			background: colors.bodyBackground,
 			position: 'relative'
 		},
@@ -108,7 +127,19 @@ theme.overrideThemeStyles = ({ rythym }, options) => ({
 		},
 		'.app': {
 			padding: '2rem 4.5rem'
+		},
+		'.snippets > .snippetContainer': {
+	    	marginBottom: '2rem'
 		}
+		// '.snippets': {
+		// 	display: 'flex',
+		// 	flexDirection: 'row',
+		// 	flexWrap: 'wrap'
+		// },
+		// '.snippets > .snippetContainer': {
+		// 	flex: '0 0 50%',
+		// 	textAlign: 'justify'
+		// }
 	}
 });
 
