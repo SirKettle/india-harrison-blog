@@ -6,7 +6,7 @@ import Typography from 'typography';
 // import moragaTheme from 'typography-theme-moraga'
 import theme from 'typography-theme-lincoln';
 import colors from 'constants/colors';
-import wallpaper from 'components/harrison-mugshot.jpg';
+import wallpaper from 'components/elephants.jpg';
 
 theme.baseFontSize = '17px';
 theme.baseLineHeight = 1.6;
@@ -58,6 +58,15 @@ theme.overrideThemeStyles = ({ rythym }, options) => ({
 		marginBottom: '1.3rem',
 		lineHeight: 1.2
 	},
+	'h1': {
+		letterSpacing: '0.02em'
+	},
+	'h2': {
+		letterSpacing: '0.12em'
+	},
+	'h3,h4,h5,h6': {
+		letterSpacing: '0.15em'
+	},
 	'hr': {
 		background: colors.quotes
 	},
@@ -84,6 +93,11 @@ theme.overrideThemeStyles = ({ rythym }, options) => ({
 	'.snippets > .snippetContainer': {
     	marginBottom: '1.3rem'
 	},
+	'.snippet': {
+		backgroundSize: 'cover',
+		backgroundPosition: 'center 5%',
+		color: 'white'
+	},
 	'.snippet *': {
 		color: 'white !important'
 	},
@@ -92,7 +106,9 @@ theme.overrideThemeStyles = ({ rythym }, options) => ({
     },
 	'.snippet > a': {
 		backgroundImage: 'linear-gradient(to bottom, rgba(0,0,0,0.22) 50%, rgba(0,0,0,0.35) 90%)',
-        padding: '5rem 2rem 2rem'
+        padding: '5rem 2rem 2rem',
+        textShadow: 'none',
+        textShadow: '0 0 5px rgba(0,0,0,0.4)'
     },
 	'.snippet:hover > a': {
 		backgroundImage: 'linear-gradient(to bottom, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0.32) 90%)',
@@ -110,21 +126,21 @@ theme.overrideThemeStyles = ({ rythym }, options) => ({
 	'@media (min-width: 769px)': {
 		body: {
 			paddingBottom: '2rem',
-			background: colors.bodyBackground,
+			// background: colors.bodyBackground,
+			background: `url(${ wallpaper })`,
 			position: 'relative'
 		},
-		'body:after': {
-			content: '""',
-			position: 'absolute',
-			top: 0,
-			right: 0,
-			bottom: 0,
-			left: 0,
-			background: `url(${ wallpaper })`,
-			backgroundSize: '8%',
-			opacity: 0.05,
-			zIndex: -1
-		},
+		// 'body:after': {
+		// 	content: '""',
+		// 	position: 'absolute',
+		// 	top: 0,
+		// 	right: 0,
+		// 	bottom: 0,
+		// 	left: 0,
+		// 	backgroundSize: '8%',
+		// 	opacity: 0.05,
+		// 	zIndex: -1
+		// },
 		'.app': {
 			padding: '2rem 4.5rem'
 		},

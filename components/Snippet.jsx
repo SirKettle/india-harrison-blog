@@ -5,6 +5,7 @@ import { prefixLink } from 'gatsby-helpers'
 import { prune } from 'underscore.string'
 import find from 'lodash/find'
 import { rhythm, scale } from 'utils/typography'
+import indiaGraphic from 'components/images/random/india-graphic.jpg';
 
 class Snippet extends React.Component {
 
@@ -13,27 +14,11 @@ class Snippet extends React.Component {
 
     const firstSplit = (post.data.body || '').split('src=');
 
-    if ( firstSplit.length < 2 ) { return null }
+    if ( firstSplit.length < 2 ) {
+      return indiaGraphic;
+    }
 
     return `${ post.path }${ firstSplit[1].split('"')[1] }`;
-  }
-
-  renderImg () {
-    const src = this.getImgSrc();
-    if ( !src ) { return null }
-
-    return (<img
-      src={ src }
-      alt="preview"
-      style={{
-        float: 'left',
-        marginRight: rhythm(1/2),
-        marginTop: rhythm(1/4),
-        marginBottom: rhythm(1/4),
-        width: rhythm(4),
-        height: rhythm(4)
-      }}
-      />);
   }
 
   render () {
@@ -48,54 +33,17 @@ class Snippet extends React.Component {
 
 
       const src = this.getImgSrc();
-      if ( !!src ) {
-        return (
-          <div className="snippet"
-            style={{
-              backgroundImage: `url(${src})`,
-              backgroundSize: 'cover',
-              color: 'white'
-            }}
-          >
-            <Link
-              style={{
-                display: 'block',
-                color: 'inherit',
-                textShadow: 'none'
-              }}
-              to={{
-                pathname: prefixLink(post.path),
-                query: {
-                  readNext: true,
-                },
-              }}
-            >
-              <label>{moment(post.data.date).format('LL')}</label>
-              <h3
-                style={{
-                  marginTop: rhythm(1/4),
-                  marginBottom: rhythm(2/4),
-                  color: 'white'
-                }}
-              >
-                {post.data.title}
-              </h3>
-              { bodyShort && <p>{bodyShort}</p> }
-            </Link>
-          </div>
-        );
-      }
-
-
-
       return (
-        <div className="snippet clearFix">
+        <div className="snippet"
+          style={{
+            backgroundImage: `url(${src})`
+          }}
+        >
           <Link
             style={{
-                display: 'block',
-                color: 'inherit',
-                textShadow: 'none'
-              }}
+              display: 'block',
+              color: 'inherit'
+            }}
             to={{
               pathname: prefixLink(post.path),
               query: {
@@ -107,16 +55,16 @@ class Snippet extends React.Component {
             <h3
               style={{
                 marginTop: rhythm(1/4),
-                marginBottom: rhythm(2/4)
+                marginBottom: rhythm(2/4),
+                color: 'white'
               }}
             >
               {post.data.title}
             </h3>
-            { this.renderImg() }
-            { body && <p>{body}</p> }
+            { bodyShort && <p>{bodyShort}</p> }
           </Link>
         </div>
-      )
+      );
     }
   }
 }

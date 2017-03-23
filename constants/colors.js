@@ -9,13 +9,13 @@ const yellow = '#ffec62';
 const quotes = '#f7f1c1';
 
 const lightIndianScheme = {
-	bodyBackground: '#ffffff',
+	bodyBackground: '#f5f2eb',
 	bodyText: 'hsla(0,0%,0%,0.6)',
 	bodyTextDark: 'hsla(0,0%,0%,0.8)',
 	bodyTextLight: 'hsla(0,0%,0%,0.4)',
 	headerText: saffron,
 	accent: yellow,
-	quotes: quotes,
+	quotes: '#e6deca',
 	link: green
 };
 
