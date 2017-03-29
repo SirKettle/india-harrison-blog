@@ -5,20 +5,22 @@ import { prefixLink } from 'gatsby-helpers'
 import { rhythm, scale } from 'utils/typography'
 import { config } from 'config'
 import colors from 'constants/colors';
+import logoImage from 'components/images/logo.png';
 
 class Template extends React.Component {
+        // <h1
+        //   style={{
+        //     ...scale(1.2),
+        //     marginBottom: rhythm(1.5),
+        //     marginTop: 0,
+        //   }}
+        // >{config.blogTitle}</h1>
   render () {
     const { location, children } = this.props
     let header
     if (location.pathname === prefixLink('/')) {
       header = (
-        <h1
-          style={{
-            ...scale(1.2),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >{config.blogTitle}</h1>
+        <img alt={ config.blogTitle } src={ logoImage } style={ { width: '100%' } } />
       )
     } else {
       header = (

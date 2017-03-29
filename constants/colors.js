@@ -9,7 +9,7 @@ const yellow = '#ffec62';
 const quotes = '#f7f1c1';
 
 const lightIndianScheme = {
-	bodyBackground: '#f5f2eb',
+	bodyBackground: '#fffaf6',
 	bodyText: 'hsla(0,0%,0%,0.6)',
 	bodyTextDark: 'hsla(0,0%,0%,0.8)',
 	bodyTextLight: 'hsla(0,0%,0%,0.4)',
