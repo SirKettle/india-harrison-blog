@@ -116,7 +116,7 @@ theme.overrideThemeStyles = ({ rythym }, options) => ({
 	'@media (min-width: 480px)': {
 		'.app': {
 			padding: '2rem 2.5rem',
-			boxShadow: '0 0 10px rgba(0,0,0,0.1)'
+			boxShadow: '0 0 7px rgba(0,0,0,0.2)'
 		},
 		'h1,h2,h3,h4,h5,h6': {
 			marginBottom: '1.6rem',
