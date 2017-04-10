@@ -6,7 +6,7 @@ import Typography from 'typography';
 // import moragaTheme from 'typography-theme-moraga'
 import theme from 'typography-theme-lincoln';
 import colors from 'constants/colors';
-import wallpaper from 'components/elephants.jpg';
+import wallpaper from 'components/elephants2.jpg';
 
 theme.baseFontSize = '17px';
 theme.baseLineHeight = 1.6;
@@ -123,11 +123,12 @@ theme.overrideThemeStyles = ({ rythym }, options) => ({
 			lineHeight: 1.2
 		}
 	},
-	'@media (min-width: 769px)': {
+	'@media (min-width: 768px)': {
 		body: {
 			paddingBottom: '2rem',
 			// background: colors.bodyBackground,
-			background: `url(${ wallpaper })`,
+			backgroundImage: `url(${ wallpaper })`,
+			backgroundSize: '285px',
 			position: 'relative'
 		},
 		// 'body:after': {

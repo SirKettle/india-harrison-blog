@@ -150,6 +150,7 @@ code {
 
 .video {
   max-width: 100%;
+  margin-bottom: 1.6rem;
 }
 
 .clearFix:after {

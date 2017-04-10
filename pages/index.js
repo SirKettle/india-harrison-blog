@@ -24,8 +24,8 @@ class BlogIndex extends React.Component {
         <Helmet
           title={config.blogTitle}
           meta={[
-            {"name": "description", "content": "Sample blog"},
-            {"name": "keywords", "content": "blog, articles"},
+            {"name": "description", "content": "Harrison Thirkettle's mission to discover India"},
+            {"name": "keywords", "content": "Harrison Thirkettle, Thirkettle, India"},
           ]}
         />
         <Bio />
@@ -34,6 +34,9 @@ class BlogIndex extends React.Component {
         <h3>Elliot</h3>
         <p>My little brother is called Elliot. Here is a picture I drew of us together</p>
         <img src={ brothersPortrait } />
+        <div style={{ position: 'relative', margin: '1rem 0', paddingBottom: '56.25%', height: 0, clear: 'both'}}>
+          <iframe style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0}} src="https://www.tripline.net/map?tripId=243102130205101386BEC1C1AC125FD9&onSite=0" frameBorder="0" allowFullScreen />
+        </div>
         <h2>Follow my adventure...</h2>
         <div className="snippets">
         {visiblePages.map((page) => (
