@@ -8,8 +8,11 @@ import { config } from 'config'
 import include from 'underscore.string/include'
 import Bio from 'components/Bio'
 import Snippet from 'components/Snippet';
-import mummyElliotAndMePhoto from 'components/mummyelliotandme.jpg';
+// import mummyElliotAndMePhoto from 'components/mummyelliotandme.jpg';
 import brothersPortrait from 'components/brothers-portrait.jpg';
+import brothersShimla from 'components/images/brothers-shimla.jpg';
+import tajMahalPhoto from 'components/images/taj-mahal.jpg';
+import familyOnElephantsPhoto from 'components/images/family-on-elephants.jpg';
 
 class BlogIndex extends React.Component {
   render () {
@@ -29,11 +32,15 @@ class BlogIndex extends React.Component {
           ]}
         />
         <Bio />
-        <p>I‘m a lucky boy who has the bestest Mummy and Elliot.  Here is us on our last holiday...</p>
-        <img src={ mummyElliotAndMePhoto } />
-        <h3>Elliot</h3>
+        <img src={ brothersShimla } />
+        <p>I‘m a very lucky boy. I'm travelling India with my Mummy, Elliot and smelly Dadda.</p>
+        <img src={ tajMahalPhoto } />
+        <h3>My family</h3>
+        <p>Here is a picture of us riding elephants!</p>
+        <img src={ familyOnElephantsPhoto } />
         <p>My little brother is called Elliot. Here is a picture I drew of us together</p>
         <img src={ brothersPortrait } />
+        <h3>This is where I have been to, so far</h3>
         <div style={{ position: 'relative', margin: '1rem 0', paddingBottom: '56.25%', height: 0, clear: 'both'}}>
           <iframe style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0}} src="https://www.tripline.net/map?tripId=243102130205101386BEC1C1AC125FD9&onSite=0" frameBorder="0" allowFullScreen />
         </div>

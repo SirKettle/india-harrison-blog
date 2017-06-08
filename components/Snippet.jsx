@@ -5,7 +5,6 @@ import { prefixLink } from 'gatsby-helpers'
 import { prune } from 'underscore.string'
 import find from 'lodash/find'
 import { rhythm, scale } from 'utils/typography'
-import indiaGraphic from 'components/images/random/india-graphic.jpg';
 
 class Snippet extends React.Component {
 
@@ -16,14 +15,13 @@ class Snippet extends React.Component {
 
     if ( firstSplit.length < 2 ) {
       return `${ post.path }snippet.jpg`;
-      return indiaGraphic;
     }
 
     return `${ post.path }${ firstSplit[1].split('"')[1] }`;
   }
 
   render () {
-    const { post } = this.props
+    const { post, title } = this.props
     if (!post) {
       return React.createElement('noscript', null)
     } else {
@@ -52,7 +50,7 @@ class Snippet extends React.Component {
               },
             }}
           >
-            <label>{moment(post.data.date).format('LL')}</label>
+            <label>{ title ? title : null  }{moment(post.data.date).format('LL')}</label>
             <h3
               style={{
                 marginTop: rhythm(1/4),

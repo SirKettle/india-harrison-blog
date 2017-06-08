@@ -7,6 +7,7 @@ import Typography from 'typography';
 import theme from 'typography-theme-lincoln';
 import colors from 'constants/colors';
 import wallpaper from 'components/elephants2.jpg';
+// import wallpaper from 'components/images/stamps.jpg';
 
 theme.baseFontSize = '17px';
 theme.baseLineHeight = 1.6;
@@ -108,7 +109,8 @@ theme.overrideThemeStyles = ({ rythym }, options) => ({
 		backgroundImage: 'linear-gradient(to bottom, rgba(0,0,0,0.22) 50%, rgba(0,0,0,0.35) 90%)',
         padding: '5rem 2rem 2rem',
         textShadow: 'none',
-        textShadow: '0 0 5px rgba(0,0,0,0.4)'
+        textShadow: '0 0 5px rgba(0,0,0,0.4)',
+        minHeight: '100%'
     },
 	'.snippet:hover > a': {
 		backgroundImage: 'linear-gradient(to bottom, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0.32) 90%)',

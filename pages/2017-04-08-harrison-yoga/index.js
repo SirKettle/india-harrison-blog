@@ -2,36 +2,25 @@ const React = require('react')
 const ReactPlayer = require('react-player');
 import BlogPost from 'wrappers/BlogPost';
 import snippetImage from './snippet.jpg';
-// import diaryImage from './diary.jpg';
 import image1 from './1.jpg';
 import image2 from './2.jpg';
 import image3 from './3.jpg';
-// import image4 from './4.jpg';
-// import image5 from './5.jpg';
-// import image6 from './6.jpg';
 
-// Videos
-
-// 329 - yoga
-// 376 - sticks
-// 382 - elliot stick
-
-
-        // <img src={ diaryImage } />
-        // <p>Today I felt very ill.  We watched some TV then we went to the beach.  We buried us and we played cops and did cartwheels then we went home and had a dance. We had fish for dinner and we went to bed.</p>
-        // <p>Oh, actually, we played with my teddy Nicholas.</p>
-        // <ReactPlayer url='https://youtu.be/kgk20JADMqA' className="video" />
-        // <img src={ image5 } />
-        // <img src={ image6 } />
-        // <p><em>Playing with Nicholas the teddy</em></p>
 class Post extends React.Component {
   render () {
     return (
       <BlogPost route={ this.props.route } author="HARRISON">
+        <h3>Yoga with Aki Chan</h3>
+        <p>We did some yoga in the morning...</p>
+        <ReactPlayer url='https://youtu.be/gp_JXWdgts8' className="video" />
         <img src={ image1 } />
+        <ReactPlayer url='https://youtu.be/AGAzE8NMIQk' className="video" />
         <img src={ snippetImage } />
         <img src={ image2 } />
         <img src={ image3 } />
+        <h3>Kalaripayattu</h3>
+        <ReactPlayer url='https://youtu.be/6LLgBqmabEc' className="video" />
+        <ReactPlayer url='https://youtu.be/v8M0h1OEXZ4' className="video" />
       </BlogPost>
     )
   }

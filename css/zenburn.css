@@ -153,9 +153,30 @@ code {
   margin-bottom: 1.6rem;
 }
 
+img {
+  display: block;
+}
+
 .clearFix:after {
   content: "";
   display: table;
   clear: both;
 }
 
+
+.next-previous > * {
+  margin-bottom: 1.6rem;
+}
+
+@media (min-width: 768px) {
+
+  .next-previous {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .next-previous > * {
+    flex: 1 1 50%;
+  }
+  
+}
