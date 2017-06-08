@@ -5,7 +5,7 @@ path: "/2017-04-05-kattoor/"
 author: "HARRISON"
 ---
 
-![Hammock](./hammock.jpg)
+![Hammock](./snippet.jpg)
 ![Image](./diary.jpg)
 
 We found some jellyfish.  On the way back we nearly got stranded but luckily Dad saved me!  We had very bad injuries.  We sailed back in our canoe then we had dinner.
