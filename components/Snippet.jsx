@@ -10,14 +10,7 @@ class Snippet extends React.Component {
 
   getImgSrc() {
     const { post } = this.props;
-
-    const firstSplit = (post.data.body || '').split('src=');
-
-    if ( firstSplit.length < 2 ) {
-      return `${ post.path }snippet.jpg`;
-    }
-
-    return `${ post.path }${ firstSplit[1].split('"')[1] }`;
+    return `${ post.path }snippet.jpg`;
   }
 
   render () {
@@ -26,9 +19,8 @@ class Snippet extends React.Component {
       return React.createElement('noscript', null)
     } else {
       // Create pruned version of the body.
-      const html = post.data.body
-      const body = html && prune(html.replace(/<[^>]*>/g, ''), 200);
-      const bodyShort = html && prune(html.replace(/<[^>]*>/g, ''), 100);
+      const html = post.data.body.replace(/<[^>]*>/g, '').replace(/=YOUTUBESTART=.+=YOUTUBEEND=/g, '');
+      const body = html && prune(html, 100);
 
 
       const src = this.getImgSrc();
@@ -60,7 +52,7 @@ class Snippet extends React.Component {
             >
               {post.data.title}
             </h3>
-            { bodyShort && <p>{bodyShort}</p> }
+            { body && <p>{body}</p> }
           </Link>
         </div>
       );
