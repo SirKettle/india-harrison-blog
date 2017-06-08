@@ -19,8 +19,9 @@ class Snippet extends React.Component {
       return React.createElement('noscript', null)
     } else {
       // Create pruned version of the body.
-      const html = post.data.body.replace(/<[^>]*>/g, '').replace(/=YOUTUBESTART=.+=YOUTUBEEND=/g, '');
-      const body = html && prune(html, 100);
+      const html = post.data.body;
+      const plainText = html && html.replace(/<[^>]*>/g, '').replace(/=YOUTUBESTART=.+=YOUTUBEEND=/g, '');
+      const body = plainText && prune(plainText, 100);
 
 
       const src = this.getImgSrc();
