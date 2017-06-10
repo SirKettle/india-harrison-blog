@@ -7,7 +7,7 @@ author: "HARRISON"
 
 ### Waking up in the desert again.
 
-![Image](./IMG_1799.jpg)
+![Image](./snippet.jpg)
 ![Image](./IMG_1803.jpg)
 ![Image](./IMG_2839.jpg)
 ![Image](./IMG_2841.jpg)

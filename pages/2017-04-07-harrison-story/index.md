@@ -7,7 +7,7 @@ author: "HARRISON"
 
 ### The Aliens who didn't know what Earth was made of
 
-![Alien_1](./1.jpg)
+![Alien_1](./snippet.jpg)
 
 One night, two aliens had a sleep over. They both said what they thought Earth was made of.
 

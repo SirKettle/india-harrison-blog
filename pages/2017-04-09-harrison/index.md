@@ -5,9 +5,6 @@ path: "/2017-04-09-kerala-to-goa/"
 author: "HARRISON"
 ---
 
-![Image](./IMG_0527.jpg)
-_On the top bunk of the sleeper train_
-
 ![Image](./diary.jpg)
 
 Today we got up and we happily played a game. Then we went to the beach. We went home and we went to a swimming pool. We had fish for lunch. Then we went to a sleeper train, and we had spicy rolls for dinner.
@@ -19,4 +16,8 @@ Today we got up and we happily played a game. Then we went to the beach. We went
 ![Image](./IMG_0481.jpg)
 ![Image](./IMG_0485.jpg)
 ![Image](./IMG_0513.jpg)
+
+![Image](./snippet.jpg)
+_On the top bunk of the sleeper train_
+
 ![Image](./IMG_0530.jpg)

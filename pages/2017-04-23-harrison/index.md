@@ -7,7 +7,7 @@ author: "HARRISON"
 
 We got picked up from the station early and came to **The Farm**, our new home in Jaipur.
 
-![Image](./IMG_1868.jpg)
+![Image](./snippet.jpg)
 _A really wide load._
 
 It's made from wood and bits and bobs, bottles, artistic things and fake spiders.

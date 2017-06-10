@@ -5,7 +5,6 @@ path: "/2017-04-20-udaipur-first-day/"
 author: "HARRISON"
 ---
 
-![Udaipur](./IMG_1698.jpg)
 ![Udaipur](./diary.jpg)
 
 We woke up very early on the exciting sleeper train.
@@ -47,4 +46,4 @@ _Elliot asleep again!_
 ![Udaipur](./IMG_1685.jpg)
 ![Udaipur](./IMG_1687.jpg)
 ![Udaipur](./IMG_1689.jpg)
-![Udaipur](./IMG_1698.jpg)
+![Udaipur](./snippet.jpg)

@@ -5,7 +5,7 @@ path: "/2017-05-14-varanasi/"
 author: "HARRISON"
 ---
 
-![Image](./IMG_3752.jpg)
+![Image](./snippet.jpg)
 ![Image](./IMG_3754.jpg)
 ![Image](./IMG_3759.jpg)
 ![Image](./IMG_3761.jpg)

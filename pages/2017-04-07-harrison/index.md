@@ -5,7 +5,7 @@ path: "/2017-04-07-kattoor/"
 author: "HARRISON"
 ---
 
-![Image](./1.jpg)
+![Image](./snippet.jpg)
 _Nigella the dog._
 
 ![Image](./diary.jpg)

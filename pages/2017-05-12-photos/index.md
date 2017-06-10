@@ -5,7 +5,7 @@ path: "/2017-05-12-varanasi-train/"
 author: "HARRISON"
 ---
 
-![Image](./IMG_3518.jpg)
+![Image](./snippet.jpg)
 ![Image](./IMG_3521.jpg)
 ![Image](./IMG_3522.jpg)
 ![Image](./IMG_3526.jpg)

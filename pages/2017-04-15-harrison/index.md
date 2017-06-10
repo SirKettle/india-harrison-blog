@@ -6,7 +6,7 @@ author: "HARRISON"
 ---
 
 ### Waking up on the train to Bombay
-![Waking up in Bombay](./IMG_1102.jpg)
+![Waking up in Bombay](./snippet.jpg)
 ![Waking up in Bombay](./IMG_1090.jpg)
 ![Waking up in Bombay](./IMG_1091.jpg)
 ![Waking up in Bombay](./IMG_1093.jpg)

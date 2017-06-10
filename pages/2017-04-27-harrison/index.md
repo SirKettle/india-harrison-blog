@@ -5,7 +5,7 @@ path: "/2017-04-27-the-farm-jaipur/"
 author: "HARRISON"
 ---
 
-![Image](./IMG_1376.jpg)
+![Image](./snippet.jpg)
 _Morning drawing._
 
 ### An early morning swim.
